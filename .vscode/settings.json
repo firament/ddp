@@ -1,0 +1,7 @@
+{
+	// Markdown
+	"markdown.extension.toc.plaintext": true,
+	"markdown.extension.print.theme": "light",
+	"markdown-preview-github-styles.colorTheme": "light",
+	"markdown-preview-github-styles.darkTheme": "light"
+}

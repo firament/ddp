@@ -1,0 +1,12 @@
+#!/bin/bash
+# 
+# Sanity checks
+[[ $(whoami) == "root" ]] && echo "Root cant use VNC" && echo "Quitting" && exit || echo "OK. Not Root";
+[[ -z ${USER} ]] && export USER=$(whoami) && echo "User set to '${USER}'" || echo "OK. ${USER}";
+[[ -z ${HOST_NAME} ]] && export HOST_NAME=${HOSTNAME} && echo "HOST_NAME set to '${HOST_NAME}'" || echo "OK. ${HOST_NAME}";
+[[ -z ${VNC_PORT} ]] && export VNC_PORT=10020;
+# Close any orphaned sessions
+vncserver -kill -clean;
+touch $HOME/.Xresources;
+# start new instance, and keep container alive
+vncserver -fg -localhost no -desktop ${HOST_NAME} -rfbport ${VNC_PORT};

@@ -1,0 +1,42 @@
+{
+  "update.mode": "none",
+  "telemetry.telemetryLevel": "off",
+  "extensions.autoUpdate": false,
+  "files.insertFinalNewline": true,
+  "explorer.copyRelativePathSeparator": "/",
+  "terminal.integrated.copyOnSelection": true,
+  // Common
+  "editor.tabSize": 4,
+  "editor.indentSize": "tabSize",
+  "editor.insertSpaces": false,
+  "editor.find.addExtraSpaceOnTop": false,
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "'Fira Code', 'Cascadia Code', Consolas, 'Courier New', monospace",
+  "editor.fontSize": 12,
+  "editor.letterSpacing": 1,
+  "editor.lineHeight": 24,
+  "editor.minimap.enabled": false,
+  "editor.mouseWheelZoom": true,
+  "editor.wordWrap": "on",
+  "editor.wrappingIndent": "indent",
+  // Markdown
+  "markdown.extension.toc.plaintext": true,
+  "markdown.extension.toc.orderedList": true,
+  "markdown.extension.print.absoluteImgPath": false,
+  "markdown.extension.print.imgToBase64": true,
+  "markdown-preview-github-styles.colorTheme": "light",
+  "markdown-preview-github-styles.darkTheme": "light",
+  "markdown-preview-github-styles.lightTheme": "light",
+  // JSON
+  "[json, jsonc]": {
+    "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace",
+    "editor.tabSize": 4,
+    "editor.indentSize": "tabSize",
+    "editor.insertSpaces": true,
+    "editor.autoClosingBrackets": "beforeWhitespace",
+    "editor.autoClosingQuotes": "beforeWhitespace",
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+  //
+}

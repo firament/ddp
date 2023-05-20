@@ -1,0 +1,4 @@
+#!/bin/bash
+xrdb /home/vuser/.Xresources;
+startxfce4 &
+x-window-manager;

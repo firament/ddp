@@ -1,0 +1,7 @@
+Host lh.bb
+    HostName bitbucket.org
+    IdentityFile ~/.ssh/id_lh_ed25519
+
+Host sak.gh
+    HostName github.com
+    IdentityFile ~/.ssh/id_lh_ed25519

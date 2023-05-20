@@ -1,0 +1,4 @@
+#!/bin/bash
+[[ $(whoami) == "root" ]] && echo "Root cant use VNC" && echo "Quitting" && exit || echo "OK. Not Root";
+[[ -z ${USER} ]] && export USER=$(whoami) && echo "User set to '${USER}'" || echo "OK. ${USER}";
+vncserver -kill -clean;
